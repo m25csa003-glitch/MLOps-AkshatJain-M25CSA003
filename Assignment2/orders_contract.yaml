@@ -1,0 +1,46 @@
+dataContractSpecification: 0.9.3
+id: urn:datacontract:ecommerce:orders
+version: 1.0.0
+
+info:
+  title: "Flash Sale Orders"
+  description: "Real-time order stream"
+  owner: "E-Commerce Data Team"
+  classification: internal
+  tags: [orders, sales]
+
+schema:
+  type: object
+  properties:
+
+    order_total:
+      type: number
+      minimum: 0
+      description: "Order total in USD"
+      pii: false
+      # physical_mapping: o_total
+
+    status:
+      type: string
+      enum: [PAID, SHIPPED, CANCELLED]
+      description: "Order status"
+      pii: false
+      # physical_mapping: status_code
+
+  required:
+    - order_total
+    - status
+
+quality:
+
+  - name: order_total_non_negative
+    type: validity
+    expression: "order_total >= 0"
+    threshold: "100%"
+    enforcement: hard
+
+  - name: valid_status_code
+    type: validity
+    expression: "status IN ('PAID','SHIPPED','CANCELLED')"
+    threshold: "100%"
+    enforcement: hard

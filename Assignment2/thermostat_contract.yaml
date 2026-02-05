@@ -1,0 +1,53 @@
+dataContractSpecification: 0.9.3
+id: urn:datacontract:iot:thermostat
+version: 1.0.0
+
+info:
+  title: "Smart Thermostat Data"
+  description: "Temperature and battery readings"
+  owner: "IoT Team"
+  classification: internal
+  tags: [iot, temperature]
+
+schema:
+  type: object
+  properties:
+
+    device_id:
+      type: string
+      description: "Device identifier"
+      pii: false
+      # physical_mapping: dev_id
+
+    temperature_celsius:
+      type: number
+      description: "Temperature in Celsius"
+      pii: false
+      # physical_mapping: temp_c
+
+    battery_level:
+      type: number
+      minimum: 0.0
+      maximum: 1.0
+      description: "Battery percentage"
+      pii: false
+      # physical_mapping: batt_lvl
+
+  required:
+    - device_id
+    - temperature_celsius
+    - battery_level
+
+quality:
+
+  - name: temperature_range_check
+    type: validity
+    expression: "temperature_celsius >= -30 AND temperature_celsius <= 60"
+    threshold: "100%"
+    enforcement: hard
+
+  - name: battery_valid_range
+    type: validity
+    expression: "battery_level >= 0.0 AND battery_level <= 1.0"
+    threshold: "100%"
+    enforcement: hard

@@ -1,0 +1,47 @@
+dataContractSpecification: 0.9.3
+id: urn:datacontract:bank:transactions
+version: 1.0.0
+
+info:
+  title: "Bank Transactions"
+  description: "Transaction records for fraud detection"
+  owner: "FinTech Data Team"
+  classification: restricted
+  tags: [banking, fraud]
+
+schema:
+  type: object
+  properties:
+
+    account_source_id:
+      type: string
+      description: "Source account ID"
+      pii: true
+      # physical_mapping: acct_src
+
+    account_destination_id:
+      type: string
+      description: "Destination account ID"
+      pii: true
+      # physical_mapping: acct_dest
+
+    transaction_timestamp:
+      type: string
+      format: date-time
+      description: "Transaction time"
+      pii: false
+      # physical_mapping: tx_ts
+
+  required:
+    - account_source_id
+    - account_destination_id
+    - transaction_timestamp
+
+quality:
+
+  - name: account_id_pattern_check
+    type: validity
+    expression: "REGEXP_LIKE(account_source_id, '^[A-Z0-9]{10}$')"
+    threshold: "100%"
+    enforcement: hard
+    description: "Hard circuit breaker: Invalid account ID blocks pipeline"
