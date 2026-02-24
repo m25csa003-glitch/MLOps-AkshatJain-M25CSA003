@@ -1,0 +1,18 @@
+# Use an appropriate base image
+FROM python:3.9-slim
+
+# Set up working directory inside the container
+WORKDIR /app
+
+# Copy requirements and install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the project files
+COPY . .
+
+# Set PYTHONPATH so scripts can find each other
+ENV PYTHONPATH="/app/scripts"
+
+# Run evaluation automatically inside container on startup
+CMD ["python", "scripts/re_eval.py"]
