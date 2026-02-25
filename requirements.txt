@@ -6,3 +6,4 @@ jupyter
 evaluate
 accelerate>=0.26.0
 huggingface_hub
+numpy

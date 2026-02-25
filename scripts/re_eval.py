@@ -1,48 +1,33 @@
-import os
 import json
-import torch
-from transformers import AutoModelForSequenceClassification, Trainer, TrainingArguments
+from transformers import AutoModelForSequenceClassification, Trainer
 from data import load_and_prepare_data
 from utils import compute_metrics
 
-def re_evaluate_hub_model():
+def main():
+    repo_name = "Despo08/distilbert-goodreads-assignment"
+    print(f"Loading model directly from Hugging Face Hub: {repo_name}")
     
-    repo_id = "Despo08/distilbert-imdb-assignment"
-    device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+    # Load model directly from HF
+    model = AutoModelForSequenceClassification.from_pretrained(repo_name)
     
-    print(f"Downloading and loading model from Hugging Face Hub: {repo_id}...")
-    
-    
-    _, test_dataset, tokenizer = load_and_prepare_data(repo_id)
-    
-    
-    model = AutoModelForSequenceClassification.from_pretrained(repo_id)
-    model.to(device)
-    
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    EVAL_DIR = os.path.join(BASE_DIR, "hf_eval_results")
-    RESULTS_FILE = os.path.join(BASE_DIR, "hf_eval_results.json")
-    
-    eval_args = TrainingArguments(
-        output_dir=EVAL_DIR,
-        per_device_eval_batch_size=16,
-        report_to="none"
-    )
+    print("Preparing test data...")
+    tokenized_datasets, _ = load_and_prepare_data(sample_size=15000)
+    test_dataset = tokenized_datasets["test"]
     
     trainer = Trainer(
         model=model,
-        args=eval_args,
         eval_dataset=test_dataset,
         compute_metrics=compute_metrics,
     )
     
-    print("Running evaluation on the downloaded model...")
-    results = trainer.evaluate()
-    print("\nRe-Evaluation Results from Hub Model:", results)
+    print("Running evaluation from Hub model...")
+    hf_eval_results = trainer.evaluate()
     
-    with open(RESULTS_FILE, "w") as f:
-        json.dump(results, f, indent=4)
-    print(f"Results successfully saved to {RESULTS_FILE}")
+    print("Saving results to hf_eval_results.json...")
+    with open("hf_eval_results.json", "w") as f:
+        json.dump(hf_eval_results, f, indent=4)
+        
+    print("Hugging Face Hub Evaluation Results:", hf_eval_results)
 
 if __name__ == "__main__":
-    re_evaluate_hub_model()
+    main()

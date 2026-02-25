@@ -1,3 +1,17 @@
-.ipynb_checkpoints/
+# Dataset folder (Taki lakho reviews wali json.gz files Git par na jayein)
+data/
+
+# Model folder (Taki heavy safetensors aur checkpoints Git par push na ho)
 models/
+
+# Python cache files
 __pycache__/
+*.pyc
+
+# Mac OS generated files (Kyunki tum MacBook use kar rahe ho)
+.DS_Store
+
+# Virtual Environments (Agar koi banaya ho toh)
+venv/
+env/
+.env/

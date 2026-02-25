@@ -1,18 +1,23 @@
-# Use an appropriate base image
-FROM python:3.9-slim
+# Use a lightweight Python base image
+FROM python:3.11-slim
 
-# Set up working directory inside the container
+# Set working directory
 WORKDIR /app
 
-# Copy requirements and install dependencies
+# Install system dependencies (required for some Python packages)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    python3-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy only requirements first to leverage Docker cache
 COPY requirements.txt .
+
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the project files
-COPY . .
+# Copy the scripts folder
+COPY scripts/ scripts/
 
-# Set PYTHONPATH so scripts can find each other
-ENV PYTHONPATH="/app/scripts"
-
-# Run evaluation automatically inside container on startup
+# Command to run the evaluation script automatically on startup
 CMD ["python", "scripts/re_eval.py"]

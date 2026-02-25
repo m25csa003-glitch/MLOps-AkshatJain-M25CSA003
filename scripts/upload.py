@@ -1,23 +1,16 @@
-from huggingface_hub import HfApi
-import os
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
+def main():
+    repo_name = "Despo08/distilbert-goodreads-assignment"
+    print(f"Uploading model and tokenizer to {repo_name}...")
+    
+    model = AutoModelForSequenceClassification.from_pretrained("./models/final_model")
+    tokenizer = AutoTokenizer.from_pretrained("./models/final_model")
+    
+    model.push_to_hub(repo_name)
+    tokenizer.push_to_hub(repo_name)
+    
+    print("Upload complete! Model is now live on Hugging Face.")
 
-repo_id = "Despo08/distilbert-imdb-assignment" 
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-model_path = os.path.join(BASE_DIR, "models", "distilbert-imdb-final")
-
-api = HfApi()
-
-print(f"Creating repository: {repo_id}")
-
-api.create_repo(repo_id=repo_id, exist_ok=True)
-
-print("Uploading model, tokenizer, and config to Hugging Face...")
-
-api.upload_folder(
-    folder_path=model_path,
-    repo_id=repo_id,
-    repo_type="model",
-)
-print(f"Model successfully uploaded to: https://huggingface.co/{repo_id}")
+if __name__ == "__main__":
+    main()
