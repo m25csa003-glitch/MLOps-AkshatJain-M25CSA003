@@ -1,0 +1,70 @@
+nohup: ignoring input
+wandb: Tracking run with wandb version 0.25.1
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q2/wandb/offline-run-20260405_203055-h1b4536h
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+/csehome/m25csa003/miniconda3/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/csehome/m25csa003/miniconda3/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/csehome/m25csa003/miniconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Device: cuda
+Files already downloaded and verified
+Generating PGD adversarial examples for training set...
+Generating PGD adversarial examples for test set...
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   0.6032   0.5215  64.04%  77.67%
+  ✓ Best saved (val_acc=77.67%)
+    2   0.1737   0.2913  93.02%  88.40%
+  ✓ Best saved (val_acc=88.40%)
+    3   0.0629   0.0906  97.62%  97.00%
+  ✓ Best saved (val_acc=97.00%)
+    4   0.0345   0.2017  98.69%  92.42%
+    5   0.0162   0.0870  99.46%  96.67%
+    6   0.0134   0.0324  99.57%  99.12%
+  ✓ Best saved (val_acc=99.12%)
+    7   0.0088   0.0363  99.71%  98.95%
+    8   0.0053   0.0370  99.84%  99.00%
+    9   0.0061   0.0286  99.75%  99.22%
+  ✓ Best saved (val_acc=99.22%)
+   10   0.0015   0.0326  99.96%  99.05%
+   11   0.0006   0.0325  99.99%  99.30%
+  ✓ Best saved (val_acc=99.30%)
+   12   0.0020   0.0315  99.96%  99.28%
+   13   0.0007   0.0283  99.97%  99.30%
+   14   0.0009   0.0320  99.97%  99.33%
+  ✓ Best saved (val_acc=99.33%)
+   15   0.0025   0.0321  99.92%  99.22%
+   16   0.0003   0.0274  99.99%  99.30%
+   17   0.0003   0.0310  99.99%  99.20%
+   18   0.0004   0.0289  99.99%  99.22%
+   19   0.0001   0.0275 100.00%  99.30%
+wandb: 
+wandb: Run history:
+wandb: best_detection_accuracy ▁
+wandb:                   epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:          train/accuracy ▁▇██████████████████
+wandb:              train/loss █▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:            val/accuracy ▁▄▇▆▇███████████████
+wandb:                val/loss █▅▂▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_detection_accuracy 99.325
+wandb:                   epoch 20
+wandb:          train/accuracy 100
+wandb:              train/loss 0.00017
+wandb:            val/accuracy 99.275
+wandb:                val/loss 0.02702
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q2/wandb/offline-run-20260405_203055-h1b4536h
+wandb: Find logs at: ./wandb/offline-run-20260405_203055-h1b4536h/logs
+   20   0.0002   0.0270 100.00%  99.28%
+
+Best Detection Accuracy (PGD): 99.33%
+Target (>=70%): ✓ PASSED

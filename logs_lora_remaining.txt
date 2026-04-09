@@ -1,0 +1,381 @@
+nohup: ignoring input
+==============================
+Running: Rank=2, Alpha=8
+==============================
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Device: cuda | Rank: 2 | Alpha: 8 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 75,364 || all params: 21,779,528 || trainable%: 0.3460313740499794
+Trainable: 75,364 / Total: 21,779,528 (0.35%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.2491   0.7662  50.69%  80.19%
+  ✓ Best saved (val_acc=80.19%)
+    2   0.5911   0.5295  83.46%  84.60%
+  ✓ Best saved (val_acc=84.60%)
+    3   0.4584   0.4607  86.41%  85.80%
+  ✓ Best saved (val_acc=85.80%)
+    4   0.3983   0.4369  87.95%  86.46%
+  ✓ Best saved (val_acc=86.46%)
+    5   0.3658   0.4190  88.82%  87.12%
+  ✓ Best saved (val_acc=87.12%)
+    6   0.3417   0.4132  89.50%  87.23%
+  ✓ Best saved (val_acc=87.23%)
+nohup: ignoring input
+==============================
+Running: Rank=2, Alpha=8
+==============================
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Device: cuda | Rank: 2 | Alpha: 8 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 75,364 || all params: 21,779,528 || trainable%: 0.3460313740499794
+Trainable: 75,364 / Total: 21,779,528 (0.35%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.2565   0.7715  50.52%  79.97%
+  ✓ Best saved (val_acc=79.97%)
+    2   0.5961   0.5265  83.35%  84.58%
+  ✓ Best saved (val_acc=84.58%)
+    3   0.4528   0.4585  86.71%  86.17%
+  ✓ Best saved (val_acc=86.17%)
+    4   0.3970   0.4388  87.92%  86.56%
+  ✓ Best saved (val_acc=86.56%)
+    5   0.3638   0.4088  88.76%  87.54%
+  ✓ Best saved (val_acc=87.54%)
+    6   0.3379   0.4067  89.52%  87.40%
+    7   0.3217   0.3944  89.97%  87.79%
+  ✓ Best saved (val_acc=87.79%)
+    8   0.3095   0.3952  90.37%  87.69%
+    9   0.3048   0.3870  90.45%  87.88%
+  ✓ Best saved (val_acc=87.88%)
+   10   0.2986   0.3853  90.69%  88.14%
+  ✓ Best saved (val_acc=88.14%)
+
+Test Accuracy: 88.73%
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁▂▃▃▄▅▆▆▇█
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▂▄▄█▃▅▄▃▃▆▂▄▃█▄▃▃▅▂▂▂▂▃▄▄▃▂▃▃▃▄▂▂▂▆▄▆▅▄
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▂▃▄█▄▅▃▃▄▅▃▄▄▅▅▃▄▄▅▃▃▃▄▄▅▄▃▄▃▂▅▂▃▅▇▅▄▄▆
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▂▅▅▆▄▆▃▄▄▅▄▅▃▄▆▅▄▆▅▃▅▄▅▃▆▅▂█▄▃▇▃▃▅▇▇▅▄█
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▂▃▄▆▄▅▂▃▄▅▂▄▄▄▄▄▃▄▅▂▃▃▃▃▅▄▂▅▃▂▆▂▄▄█▆▅▄▆
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▄▆▆▇▄▆▄▄▅▆▃▅▃▅▃▄▄▃▇▃▄▃▃▄▄▄▁▅▂▃█▃▂▄▆█▇▆▇
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▂▄▄▄▄▄▄▅▄▇▃▅▄▄▃▄▄▃▇▃▄▄▃▆▃▅▂▇▅▃█▃▃▅▆▆█▅▇
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▃▄▅▆▅█▅▃▃▆▄▅▆▄▅▃▂▃▅▃▃▅▂▄▃▅▂▇▂▂▆▂▂▅▄▅▄▃▇
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▂▅▅▇▄▆▆▄▄▃▇▄▅▄▃▃▅▃▃▆▂▄▃▂▃▄▆▁▆▂▂█▂▂▄▇▄▆▃▇
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁▂▄▃▅▄▄▂▃▄▄▂▄▄▃▆▄▄▄▅▃▄▂▃▄▅▃▃█▄▃▆▂▄▄█▆▆▃▅
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_B.default.weight ▁▂▃▄▅▄▅▃▄▄▆▃▄▄▄▅▄▄▄▆▃▄▃▄▄▆▄▃▇▅▃█▃▄▅█▇▆▅▇
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_A.default.weight ▁▃▂▄▅▃▄▂▂▃▄▃▃▂▂▄▂▂▂▃▄▃▃▂▃▂▂▂▆▂▂█▄▂▂▃▃▃▅▃
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_B.default.weight ▁▅▅▆▅▅▆▃▅▄▅▃▄▄▄▅▄▄▅▅▃▃▄▄▄▆▄▃▆▄▃█▃▃▅█▇▆▅▇
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_A.default.weight ▁▇▆▄▄▂▃▃▂▃▄▂▂▂▂█▃▄▂▄▂▃▂▁▃▄▃▁▃▃▃▆▂▂▄▆▄▅▄▄
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_B.default.weight ▁▃▄▆▆▅▆▄▄▄▅▃▅▄▄▄▄▃▄▅▃▃▃▃▄▅▄▃▅▃▂▇▃▂▄█▆▅▅▆
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_A.default.weight ▂▃▂▂▃▂▄▂▂▃▃▂▆▁▃▄▂▃▄▂▄▂▂▂▂▂▂▁▅▂▃█▁▂▄▅▅▆▄▅
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_B.default.weight ▁▄▅█▇▅▇▃▄▄▆▃▄▄▄▄▄▄▄▅▃▂▃▃▃▄▃▁▆▃▂▆▁▃▄▇▅▅▅▆
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_A.default.weight ▂▂▃▃▅▂▄▂▄▂▄▂▄▂▂▂▂▃▁▃▅▂▂▂▂▃▂▃▅▃▁▄▂▂▃▆▄▃▄█
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_B.default.weight ▁▄▅█▇▆▇▄▅▅▇▃▄▄▄▄▄▄▄▅▃▂▄▄▄▅▄▂▆▄▂▇▂▃▄▇▅▅▆▇
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_A.default.weight ▂▁▃▅█▄▃▃▆▇▆▂▃▂▂▃▂▄▃▃▃▄▂▂▁▂▃▁▅▂▂▇▂▂▅▆▄▄▇▇
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_B.default.weight ▁▅▅█▇▅▆▃▄▃▇▂▄▄▄▃▆▃▄▄▂▂▄▄▄▄▅▁▇▃▂█▂▃▄█▆▅▄█
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_A.default.weight ▁▂▃▄▅▃▃▁▃▃▆▃▄▃▃▃▅▂▄▃▄▂▃▃▃▆▃▂▅▅▂▆▅▂▄█▃▄▅▄
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_B.default.weight ▁▂▃▅▇▄▆▃▅▃▆▃▄▃▄▄▅▄▄▅▂▄▃▃▃▄▅▂▇▄▃▇▄▃▄█▅▆▄▆
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_A.default.weight ▁▂▃▆▃▃▅▃▄▅▃▄▄▃▄▄▃▃▄▅▄▃▅▆▄▄▄▃▇▄▃█▄▄▃█▄▅▅▅
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_B.default.weight ▁▂▄▅▃▄▅▃▄▄▇▃▄▅▄▄▅▄▃▆▄▄▄▄▄▄▆▃▇▅▃█▄▃▅▆▆█▅▇
+wandb:                                                                  lr █▇▇▆▅▃▂▂▁▁
+wandb:                                                       test/accuracy ▁
+wandb:                                                      train/accuracy ▁▇▇███████
+wandb:                                                          train/loss █▂▂▁▁▁▁▁▁▁
+wandb:                                                    trainable_params ▁
+wandb:                                                        val/accuracy ▁▅▆▇▇▇████
+wandb:                                                            val/loss █▄▂▂▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 10
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.15636
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 1.39363
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.1294
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.96219
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.17603
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 1.2337
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.31408
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 1.02462
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.10338
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_B.default.weight 1.43441
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_A.default.weight 0.10629
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_B.default.weight 1.46255
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_A.default.weight 0.09744
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_B.default.weight 1.57287
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_A.default.weight 0.12959
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_B.default.weight 1.88692
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_A.default.weight 0.21216
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_B.default.weight 2.06744
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_A.default.weight 0.15119
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_B.default.weight 1.5816
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_A.default.weight 0.12764
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_B.default.weight 1.53122
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_A.default.weight 0.13518
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_B.default.weight 1.15909
+wandb:                                                                  lr 0.0
+wandb:                                                       test/accuracy 88.73
+wandb:                                                      train/accuracy 90.6875
+wandb:                                                          train/loss 0.29855
+wandb:                                                    trainable_params 75364
+wandb:                                                        val/accuracy 88.14
+wandb:                                                            val/loss 0.38528
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_120815-lqglqe8m
+wandb: Find logs at: ./wandb/offline-run-20260405_120815-lqglqe8m/logs
+Done!
+==============================
+Running: Rank=4, Alpha=2
+==============================
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Device: cuda | Rank: 4 | Alpha: 2 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 112,228 || all params: 21,816,392 || trainable%: 0.5144205329643875
+Trainable: 112,228 / Total: 21,816,392 (0.51%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.4669   0.8639  46.76%  78.40%
+  ✓ Best saved (val_acc=78.40%)
+    2   0.6345   0.5537  82.81%  83.85%
+  ✓ Best saved (val_acc=83.85%)
+    3   0.4721   0.4717  86.00%  85.94%
+  ✓ Best saved (val_acc=85.94%)
+    4   0.4112   0.4459  87.56%  86.35%
+  ✓ Best saved (val_acc=86.35%)
+    5   0.3761   0.4218  88.37%  87.05%
+  ✓ Best saved (val_acc=87.05%)
+    6   0.3536   0.4105  89.12%  87.32%
+  ✓ Best saved (val_acc=87.32%)
+    7   0.3386   0.4140  89.40%  87.19%
+    8   0.3295   0.4037  89.63%  87.54%
+  ✓ Best saved (val_acc=87.54%)
+    9   0.3207   0.3970  90.02%  87.49%
+   10   0.3165   0.4058  90.17%  87.69%
+  ✓ Best saved (val_acc=87.69%)
+
+Test Accuracy: 88.30%
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁▂▃▃▄▅▆▆▇█
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▁▆▅▇▅▄▅▆▃▃▃▇▆▄▄▅▄██▅▇▄▇▅▅▄▄▃▃▄▃▅▆▄▆▄▅▅▅
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▁▃▃▅▄▄▅█▄▄▄▅▃▆▄▅▄▅▄▅▇▄▅▃▅▅▄▅▃▅▅▄▄▄▅▄▆▄▅
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▂▄▄▅▃▅▄▆▃▄▄▅▅▇▅▆▄▆▄▆▇▃▅▄▄▇▄▄▄▅▄▅▇▅▅▅█▄▅
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▂▃▄▄▄▄▃█▄▄▄▄▄▅▄▅▅▅▄▅▇▄▅▄▅▆▅▄▄▅▄▅▆▄▅▅▇▅▅
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▃▅▄▆▅█▃▆▄▄▄▅▃▃▃▄▃▅▄█▅▃▅▃▅▅▆▄▃▄▃▅▄▄▄▃▅▅▄
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▁▂▄▄▄▆▅▅▅▅▅▇▆▆▆▇▅▇▆▇█▄▇▅▆▇▅▆▄▅▄▇▇▆▆▆▇▇▆
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▃▅▅▇▅█▅▅▅▅▆▄▆▇▄▆▇▆▅▇▇▅▅▄▅▄▅▄▇▅▅▇▆▄▄▄▇▅▅
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▂▄▆▆▆█▆▄▅▅▆▆▇▆▄▅▆▇▄▇█▄▆▆▆▅▄▄▆▄▄▇▆▅▆▅▇▆▇
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁▂▄▄▄▄▅▄▆▃▄▄▅▅▅▅▅▅▆▃▅█▄▅▃▆▆▅▄▄▅▄▅▇▅▅▅▇▅▅
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_B.default.weight ▁▂▃▄▅▄▅▄█▄▃▅▅▄▆▅▅▅▆▅▇█▄▅▄▆▆▆▅▄▅▅▅▆▄▆▅█▄▅
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_A.default.weight ▁▄▃▃▅▇▅▂▆▃▂▂▄▃▃▂▇▇▃▃█▅▅▄▄▄▅▄▇▂▄▂▅▆▄▅▃▅▄▃
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_B.default.weight ▁▃▄▅▆▅▆▄█▄▄▅▄▄▅▄▅▆▅▅▇▇▄▄▄▆▆▅▅▃▅▄▅▆▄▆▅█▄▅
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_A.default.weight ▁▆▅▅▅▅▃▄▇▄▃▄▄▃▅▄▄█▆▅▅▇▅▄▃▆▆▅▇▄▆▄▅▆▄█▅▅▅▆
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_B.default.weight ▁▂▄▅▆▆▆▄█▄▃▅▄▄▆▄▅▅▅▅▆▇▄▄▄▅▆▅▄▄▄▄▅▅▄▆▅█▄▅
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_A.default.weight ▁▄▅▅▅▃▄▃█▃▄▃▄▄▆▃▄▃▃▃▆▇▃▄▃▄▄▃▃▃▄▃▄▃▃▅▃▄▅▄
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_B.default.weight ▁▂▄▅▆▅▅▄█▄▃▄▄▄▆▄▄▄▆▄▅▇▃▄▃▅▅▄▃▃▃▄▅▅▄▅▄▇▄▅
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_A.default.weight ▁▂▃▃▄▄▄▃▄▃▃▃▃▄▄▃▄▄▃▃▄█▃▃▃▄▄▃▂▂▃▃▃▄▄▃▃▄▂▄
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_B.default.weight ▁▂▃▄▅▄▅▄█▄▄▅▄▅▆▄▆▅▇▄▆▇▄▅▄▅▅▅▄▄▄▄▅▅▅▅▅▇▅▅
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_A.default.weight ▁▂▃▄▇▃▄▃▇▃▃▄▄▄▆▂▄▄▅▃▅█▄▃▃▃▄▄▃▃▃▄▄▄▃▅▃▇▃▄
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_B.default.weight ▁▂▃▄▅▄▅▃▇▄▃▄▄▄▅▃▅▄▅▄▅█▄▄▄▆▅▅▄▄▄▄▅▅▄▅▄▇▅▅
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_A.default.weight ▁▂▃▃█▄▅▄▇▄▄▄▄▄▅▃▄▅▆▄▄█▄▄▃▅▅▄▃▃▄▃▅▄▄▅▄▅▄▅
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_B.default.weight ▁▂▃▄▅▄▆▄▆▅▄▅▅▄▅▄▆▆▆▅▆█▅▅▄▅▅▅▅▄▅▅▆▅▅▅▅▇▆▆
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_A.default.weight ▁▂▄▅▅▅▆▄▇▅▅▅▅▅▅▄▆▅▆▃▆▇▅▆▄▆▅▅▅▄▅▅▅█▆▆▅▇▇▆
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_B.default.weight ▁▂▂▃▅▄▅▄▅▅▅▅▆▅▅▅▆▆▆▅▆█▅▆▅▆▆▅▅▄▅▅▆▆▆▆▆▇▆▆
+wandb:                                                                  lr █▇▇▆▅▃▂▂▁▁
+wandb:                                                       test/accuracy ▁
+wandb:                                                      train/accuracy ▁▇▇███████
+wandb:                                                          train/loss █▂▂▁▁▁▁▁▁▁
+wandb:                                                    trainable_params ▁
+wandb:                                                        val/accuracy ▁▅▇▇██████
+wandb:                                                            val/loss █▃▂▂▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 10
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.04803
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 0.38522
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.02553
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.24382
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.03191
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.29991
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.06493
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.24582
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.03277
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_B.default.weight 0.30817
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_A.default.weight 0.02235
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_B.default.weight 0.33897
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_A.default.weight 0.02689
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_B.default.weight 0.47693
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_A.default.weight 0.0325
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_B.default.weight 0.44537
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_A.default.weight 0.04095
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_B.default.weight 0.54244
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_A.default.weight 0.03725
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_B.default.weight 0.467
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_A.default.weight 0.03862
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_B.default.weight 0.37193
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_A.default.weight 0.03841
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_B.default.weight 0.32527
+wandb:                                                                  lr 0.0
+wandb:                                                       test/accuracy 88.3
+wandb:                                                      train/accuracy 90.1675
+wandb:                                                          train/loss 0.31646
+wandb:                                                    trainable_params 112228
+wandb:                                                        val/accuracy 87.69
+wandb:                                                            val/loss 0.40583
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_122104-jnpcgfix
+wandb: Find logs at: ./wandb/offline-run-20260405_122104-jnpcgfix/logs
+Done!
+==============================
+Running: Rank=4, Alpha=4
+==============================
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Device: cuda | Rank: 4 | Alpha: 4 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 112,228 || all params: 21,816,392 || trainable%: 0.5144205329643875
+Trainable: 112,228 / Total: 21,816,392 (0.51%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.3471   0.7819  49.02%  80.04%
+  ✓ Best saved (val_acc=80.04%)
+    2   0.5935   0.5267  83.66%  84.83%
+  ✓ Best saved (val_acc=84.83%)
+    3   0.4570   0.4630  86.45%  86.15%
+  ✓ Best saved (val_acc=86.15%)
+    4   0.4016   0.4470  87.66%  86.05%
+    5   0.3672   0.4174  88.73%  87.31%
+  ✓ Best saved (val_acc=87.31%)
+    6   0.3462   0.4105  89.10%  87.23%
+    7   0.3309   0.4038  89.42%  87.50%
+  ✓ Best saved (val_acc=87.50%)
+    8   0.3214   0.3956  89.78%  87.75%
+  ✓ Best saved (val_acc=87.75%)
+    9   0.3111   0.3941  90.36%  88.00%
+  ✓ Best saved (val_acc=88.00%)
+   10   0.3092   0.3988  90.39%  87.73%
+
+Test Accuracy: 88.05%
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁▂▃▃▄▅▆▆▇█
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▁▅▃▄▅█▄▃▅▆▆▇▄▄▆▂▆▃▅▂▂▅▄▅▂▃▇▄▃▂▃▃▃▂▂▃▅▄▃
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▁▃▃▅▆▇▅▃▅▅█▇▄▅▅▆▄▄▇▄▄▆▄▅▄▆▇▇▃▂▄▂▄▄▂▅▅▆▄
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▂▄▃▅▇▅▇▄▇▄▆█▄▄▆▄▄▇▇▃▅▅▄▇▅▅▆▇▅▃▄▃▄▄▄▅▆▆▅
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▂▃▃▄▆▅▆▄▇▅▆█▄▅▆▅▅▇▇▄▄▆▅▆▅▆█▆▆▃▅▃▅▅▃▆▇▆▅
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▃▆▃▆▇▅▆▃▅▄▅▅▄▄▅▇▄▆▄▄▃▆▄▃▅▃▄▅▃▄▃▁▄▅▁▅█▄▄
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▂▄▂▄▇▅▆▃▅▅▅▆▅▅▆▅▄▇▅▅▄▆▇▅▇▅▅▅▄▅▄▄▅▇▃██▅▄
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▅▇▅▆▆▅▇▃▆▆█▇▆▆▆▄▅▇▅▃▃▆▅▄▇▆▅▅▂▅▃▁▆▅▃▅▆▅▅
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▃▅▃▆█▄▇▄▇▅▇▅▅▄▇▇▄█▄▅▅▇▆▅▅▆▅▆▂▅▄▃▇▆▃▇▆▆▅
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁▂▂▂▅█▄▄▂▄▃▄▄▃▃▄▂▃▅▅▂▃▅▄▄▄▄▅▅▃▂▂▂▃▅▁▄▅▃▄
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_B.default.weight ▁▂▃▃▄▆▅▆▃▇▄▆█▄▅▄▄▄▆▇▃▄▇▄▆▅▆▇▆▄▂▄▃▅▅▂▅▅▅▄
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_A.default.weight ▁▃▅▂▅▆▄█▃▄▃▄▇▃▃▄▃▃▆█▃▃▆▃▄▄▄▇▄▃▂▄▂▄▇▂▄▆▃▃
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_B.default.weight ▁▃▄▄▆▇▆▆▃█▅▆█▄▄▅▅▄▆▇▃▄▆▄▅▅▅▆▆▄▃▄▃▄▅▃▅▅▅▄
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_A.default.weight ▁▂▃▃▃▅▅█▂▅▃▄▅▃▃▃▂▂▄▅▂▂▄▃▃▃▃▃▃▃▂▂▃▄▃▂▆▃▃▃
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_B.default.weight ▁▂▅▅▅█▆▆▄█▅▆▇▅▅▆▄▄▇█▃▄▆▄▅▅▆▇▆▄▃▄▃▄▅▃▆▅▆▄
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_A.default.weight ▂▁▂▃▃█▄▂▂▄▅▆▆▃▃▄▃▃▆▆▂▂▄▂▅▂▄▆▃▃▁▂▁▅▃▁▃▄▂▂
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_B.default.weight ▁▃▅▄▅█▆▇▃█▄▅▆▄▄▅▃▃▆▆▂▃▅▄▄▅▄▅▅▃▂▃▂▅▄▂▄▄▄▃
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_A.default.weight ▁▂▃▃▃▇▃▆▃▆█▅▆▆▃▄▄▃▅▅▃▂▄▄▅▃▄▆▅▃▂▃▂▅▄▂▅▄▃▄
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_B.default.weight ▁▂▅▄▅█▇▇▄█▅▆▇▅▅▆▄▄▇▇▄▃▇▅▆▅▆▆▆▄▃▄▃▅▅▃▆▆▅▄
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_A.default.weight ▁▃▃▂▅▅▄▆▃▆▅▇▇▄▅▅▄▅▇▇▃▃█▄▅▅▄▅▅▃▄▄▃▅▅▃▅▅▅▄
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_B.default.weight ▁▂▄▃▅▆▅▆▃▇▅▅█▅▅▅▄▄▇▆▄▃▆▅▅▅▆▆▆▄▃▄▃▆▅▃▆▅▅▄
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_A.default.weight ▁▃▄▃▆▆▄█▃▆▄▇▆▄▅█▅▄▇▆▃▄█▅▄▆▅▃▅▄▃▄▂▅▆▂▆▆▄▄
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_B.default.weight ▁▂▄▃▅▇▆▇▄█▅▅█▅▅▇▅▅▇▇▄▄▇▆▆▆▇▇▆▄▄▄▄▆▆▃█▆▆▅
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_A.default.weight ▁▃▄▄▄▆▅▆▃▆▄▅▅▄▄▅▅▅▅▅▄▃▅▆▄▅▅█▇▃▃▄▃▄▅▃▅▅▄▄
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_B.default.weight ▁▂▂▂▄▆▄▅▃▅▄▅▅▅▅▆▅▅▆▆▄▃▅▆▅▆▅▆▅▄▄▄▄▆▅▃█▇▅▅
+wandb:                                                                  lr █▇▇▆▅▃▂▂▁▁
+wandb:                                                       test/accuracy ▁
+wandb:                                                      train/accuracy ▁▇▇███████
+wandb:                                                          train/loss █▂▂▁▁▁▁▁▁▁
+wandb:                                                    trainable_params ▁
+wandb:                                                        val/accuracy ▁▅▆▆▇▇████
+wandb:                                                            val/loss █▃▂▂▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 10
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.05067
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 0.40513
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.03742
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.34326
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.05021
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.34858
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.09437
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.35968
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.04618
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_B.default.weight 0.3908
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_A.default.weight 0.03441
+wandb:  grad_norm/base_model.model.blocks.3.attn.qkv.lora_B.default.weight 0.4964
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_A.default.weight 0.03225
+wandb:  grad_norm/base_model.model.blocks.4.attn.qkv.lora_B.default.weight 0.52593
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_A.default.weight 0.04218
+wandb:  grad_norm/base_model.model.blocks.5.attn.qkv.lora_B.default.weight 0.50486
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_A.default.weight 0.05573
+wandb:  grad_norm/base_model.model.blocks.6.attn.qkv.lora_B.default.weight 0.63984
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_A.default.weight 0.0452
+wandb:  grad_norm/base_model.model.blocks.7.attn.qkv.lora_B.default.weight 0.56171
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_A.default.weight 0.0474
+wandb:  grad_norm/base_model.model.blocks.8.attn.qkv.lora_B.default.weight 0.53109
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_A.default.weight 0.04854
+wandb:  grad_norm/base_model.model.blocks.9.attn.qkv.lora_B.default.weight 0.45199
+wandb:                                                                  lr 0.0
+wandb:                                                       test/accuracy 88.05
+wandb:                                                      train/accuracy 90.3875
+wandb:                                                          train/loss 0.3092
+wandb:                                                    trainable_params 112228
+wandb:                                                        val/accuracy 87.73
+wandb:                                                            val/loss 0.39875
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_123338-mq6g58kx
+wandb: Find logs at: ./wandb/offline-run-20260405_123338-mq6g58kx/logs
+Done!
+==============================
+Running: Rank=4, Alpha=8
+==============================
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Device: cuda | Rank: 4 | Alpha: 8 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 112,228 || all params: 21,816,392 || trainable%: 0.5144205329643875
+Trainable: 112,228 / Total: 21,816,392 (0.51%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.3047   0.7607  49.86%  79.99%
+  ✓ Best saved (val_acc=79.99%)
+    2   0.5807   0.5254  83.91%  84.59%
+  ✓ Best saved (val_acc=84.59%)
+    3   0.4459   0.4575  86.58%  86.34%
+  ✓ Best saved (val_acc=86.34%)
+    4   0.3894   0.4302  88.10%  86.61%
+  ✓ Best saved (val_acc=86.61%)
+    5   0.3595   0.4152  88.92%  87.42%
+  ✓ Best saved (val_acc=87.42%)
+    6   0.3351   0.3982  89.62%  87.44%
+  ✓ Best saved (val_acc=87.44%)
+    7   0.3190   0.3976  90.03%  87.82%
+  ✓ Best saved (val_acc=87.82%)
+    8   0.3067   0.3937  90.52%  88.12%
+  ✓ Best saved (val_acc=88.12%)

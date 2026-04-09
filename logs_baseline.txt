@@ -1,0 +1,58 @@
+nohup: ignoring input
+wandb: Tracking run with wandb version 0.25.1
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260403_151403-82udq77s
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Using device: cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable: 38,500 / Total: 21,704,164
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   1.0826   0.7449  71.44%  78.16%
+  ✓ Best model saved (val_acc=78.16%)
+    2   0.6454   0.6841  80.88%  80.02%
+  ✓ Best model saved (val_acc=80.02%)
+    3   0.5684   0.6769  82.81%  79.91%
+    4   0.5211   0.6673  84.00%  80.62%
+  ✓ Best model saved (val_acc=80.62%)
+    5   0.4768   0.6557  85.22%  80.54%
+    6   0.4458   0.6678  86.14%  80.62%
+    7   0.4179   0.6560  87.01%  80.92%
+  ✓ Best model saved (val_acc=80.92%)
+    8   0.3976   0.6482  87.45%  81.23%
+  ✓ Best model saved (val_acc=81.23%)
+    9   0.3800   0.6475  88.06%  81.41%
+  ✓ Best model saved (val_acc=81.41%)
+   10   0.3715   0.6311  88.38%  81.52%
+  ✓ Best model saved (val_acc=81.52%)
+
+Test Accuracy (Baseline): 80.92%
+wandb: 
+wandb: Run history:
+wandb:            epoch ▁▂▃▃▄▅▆▆▇█
+wandb:               lr █▇▇▆▅▃▂▂▁▁
+wandb:    test/accuracy ▁
+wandb:   train/accuracy ▁▅▆▆▇▇▇███
+wandb:       train/loss █▄▃▂▂▂▁▁▁▁
+wandb: trainable_params ▁
+wandb:     val/accuracy ▁▅▅▆▆▆▇▇██
+wandb:         val/loss █▄▄▃▃▃▃▂▂▁
+wandb: 
+wandb: Run summary:
+wandb:            epoch 10
+wandb:               lr 0
+wandb:    test/accuracy 80.92
+wandb:   train/accuracy 88.3825
+wandb:       train/loss 0.37149
+wandb: trainable_params 38500
+wandb:     val/accuracy 81.52
+wandb:         val/loss 0.63112
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260403_151403-82udq77s
+wandb: Find logs at: ./wandb/offline-run-20260403_151403-82udq77s/logs
+Done!

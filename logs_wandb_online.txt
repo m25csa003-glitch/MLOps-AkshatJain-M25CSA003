@@ -1,0 +1,699 @@
+nohup: ignoring input
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run v77whtn8
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_164409-v77whtn8
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_no_lora
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/v77whtn8
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Using device: cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable: 38,500 / Total: 21,704,164
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   1.0862   0.7372  71.57%  78.69%
+  ✓ Best model saved (val_acc=78.69%)
+
+Test Accuracy (Baseline): 77.90%
+wandb: uploading console lines 11-12; updating run metadata
+wandb: uploading console lines 11-12
+wandb: uploading console lines 11-12; uploading config.yaml; uploading media/images/classwise_histogram_1_e6561492d187f69c1c1d.png; uploading output.log; uploading wandb-summary.json
+wandb: uploading console lines 11-12; uploading media/images/classwise_histogram_1_e6561492d187f69c1c1d.png; uploading output.log; uploading wandb-summary.json
+wandb: uploading console lines 11-12
+wandb: uploading data
+wandb: uploading history steps 1-2, summary
+wandb: 
+wandb: Run history:
+wandb:            epoch ▁
+wandb:               lr ▁
+wandb:    test/accuracy ▁
+wandb:   train/accuracy ▁
+wandb:       train/loss ▁
+wandb: trainable_params ▁
+wandb:     val/accuracy ▁
+wandb:         val/loss ▁
+wandb: 
+wandb: Run summary:
+wandb:            epoch 1
+wandb:               lr 0
+wandb:    test/accuracy 77.9
+wandb:   train/accuracy 71.5725
+wandb:       train/loss 1.08617
+wandb: trainable_params 38500
+wandb:     val/accuracy 78.69
+wandb:         val/loss 0.73719
+wandb: 
+wandb: 🚀 View run baseline_no_lora at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/v77whtn8
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_164409-v77whtn8/logs
+Done!
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run lb7tulzg
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_164716-lb7tulzg
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lora_r2_a2_do0.1
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/lb7tulzg
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Device: cuda | Rank: 2 | Alpha: 2 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 75,364 || all params: 21,779,528 || trainable%: 0.3460313740499794
+Trainable: 75,364 / Total: 21,779,528 (0.35%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.4021   0.8308  47.78%  79.19%
+  ✓ Best saved (val_acc=79.19%)
+
+Test Accuracy: 78.63%
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_histogram_625_2aba032ebd9f7c024e16.png
+wandb: uploading history steps 6-6, summary
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▂▂▃█▃
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▂▃▄█▇
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▂█▅██
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▂▅▇██
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▃▅██▆
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▃▄▆█▆
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▆▆█▇▆
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▃▄▅█▆
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁▆▇▆█▆
+wandb:                                                                 +22 ...
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 1
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.03458
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 0.35936
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.03274
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.25729
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.04187
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.23532
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.08362
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.2621
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.0275
+wandb:                                                                 +22 ...
+wandb: 
+wandb: 🚀 View run lora_r2_a2_do0.1 at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/lb7tulzg
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_164716-lb7tulzg/logs
+Done!
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 5y449gw2
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_164925-5y449gw2
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lora_r2_a4_do0.1
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/5y449gw2
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Device: cuda | Rank: 2 | Alpha: 4 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 75,364 || all params: 21,779,528 || trainable%: 0.3460313740499794
+Trainable: 75,364 / Total: 21,779,528 (0.35%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.3303   0.8123  49.46%  79.17%
+  ✓ Best saved (val_acc=79.17%)
+
+Test Accuracy: 79.06%
+wandb: updating run metadata
+wandb: uploading media/images/classwise_histogram_625_b324a9acb8510b6efaac.png; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 6-6, summary
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▂▃▅█▅
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▂▄▆██
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▅▆▆█▇
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▂▄▆█▅
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▅▆█▇▄
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▃▃▆█▄
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▅▇██▅
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▃▄▆█▄
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁▄█▆█▃
+wandb:                                                                 +22 ...
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 1
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.05362
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 0.48392
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.03794
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.33467
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.0669
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.37341
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.09554
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.38422
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.03441
+wandb:                                                                 +22 ...
+wandb: 
+wandb: 🚀 View run lora_r2_a4_do0.1 at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/5y449gw2
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_164925-5y449gw2/logs
+Done!
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run epc6ro7q
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_165134-epc6ro7q
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lora_r2_a8_do0.1
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/epc6ro7q
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Device: cuda | Rank: 2 | Alpha: 8 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 75,364 || all params: 21,779,528 || trainable%: 0.3460313740499794
+Trainable: 75,364 / Total: 21,779,528 (0.35%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.2587   0.7582  51.17%  80.37%
+  ✓ Best saved (val_acc=80.37%)
+
+Test Accuracy: 79.64%
+wandb: updating run metadata
+wandb: uploading media/images/classwise_histogram_625_d0bf5da1f9b404df2a58.png; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading media/images/classwise_histogram_625_d0bf5da1f9b404df2a58.png
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▂▃▆██
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▂▂█▄█
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▄▄▆▆█
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▃▄█▄█
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▇█▇▅▄
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▄▆█▇▆
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▇██▆█
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▅▇█▇▆
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▂▁▆█▃▆
+wandb:                                                                 +22 ...
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 1
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.16346
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 1.09112
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.08867
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.68496
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.12407
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.75487
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.26526
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.69664
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.09391
+wandb:                                                                 +22 ...
+wandb: 
+wandb: 🚀 View run lora_r2_a8_do0.1 at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/epc6ro7q
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_165134-epc6ro7q/logs
+Done!
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run zgkz9q78
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_165345-zgkz9q78
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lora_r4_a2_do0.1
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/zgkz9q78
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Device: cuda | Rank: 4 | Alpha: 2 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 112,228 || all params: 21,816,392 || trainable%: 0.5144205329643875
+Trainable: 112,228 / Total: 21,816,392 (0.51%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.4449   0.8531  46.73%  79.00%
+  ✓ Best saved (val_acc=79.00%)
+
+Test Accuracy: 79.13%
+wandb: updating run metadata
+wandb: uploading media/images/classwise_histogram_625_02fb46a26a876199ddeb.png; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 6-6, summary
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▃▁▃▂▅█
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight █▁▂▂▅▄
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight █▁▄▄▆▆
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight █▁▃▄█▅
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▄▅█▅▃
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▃▅▆█▄
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▄▇█▇▅
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▃▅█▇▄
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight █▁▃▁▃▃
+wandb:                                                                 +22 ...
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 1
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.07067
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 0.23604
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.02085
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.14981
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.0307
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.14414
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.04887
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.1637
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.02237
+wandb:                                                                 +22 ...
+wandb: 
+wandb: 🚀 View run lora_r4_a2_do0.1 at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/zgkz9q78
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_165345-zgkz9q78/logs
+Done!
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 67ctlh7m
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_165555-67ctlh7m
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lora_r4_a4_do0.1
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/67ctlh7m
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Device: cuda | Rank: 4 | Alpha: 4 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 112,228 || all params: 21,816,392 || trainable%: 0.5144205329643875
+Trainable: 112,228 / Total: 21,816,392 (0.51%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.2912   0.7955  50.27%  79.17%
+  ✓ Best saved (val_acc=79.17%)
+
+Test Accuracy: 79.72%
+wandb: updating run metadata
+wandb: uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_histogram_625_cf55849d767d80882133.png; uploading output.log
+wandb: uploading history steps 6-6, summary
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▂▄▇▆█
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▂▄▄█▆
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▄▅▃█▇
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▃▆▄█▆
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▅█▇▆▅
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▄▅▆█▇
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▅█▆▆▇
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▄▇▆██
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁▄▇▅█▄
+wandb:                                                                 +22 ...
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 1
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.06167
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 0.25439
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.02879
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.19889
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.05508
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.27568
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.10255
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.3056
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.02199
+wandb:                                                                 +22 ...
+wandb: 
+wandb: 🚀 View run lora_r4_a4_do0.1 at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/67ctlh7m
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_165555-67ctlh7m/logs
+Done!
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run n9s95w2k
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_165849-n9s95w2k
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lora_r4_a8_do0.1
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/n9s95w2k
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Device: cuda | Rank: 4 | Alpha: 8 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 112,228 || all params: 21,816,392 || trainable%: 0.5144205329643875
+Trainable: 112,228 / Total: 21,816,392 (0.51%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.1572   0.7480  52.60%  80.38%
+  ✓ Best saved (val_acc=80.38%)
+
+Test Accuracy: 80.38%
+wandb: updating run metadata
+wandb: uploading media/images/classwise_histogram_625_22d813e96a87050c6de5.png; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading media/images/classwise_histogram_625_22d813e96a87050c6de5.png
+wandb: uploading history steps 6-6, summary
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▁▃█▆▇
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▂▄▄█▅
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▂▄▅█▆
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▂█▅▆▄
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▆▇██▇
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▄▄▇█▇
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▅█▆▆▇
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▂▆▅▇█
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁█▆▆▆▅
+wandb:                                                                 +22 ...
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 1
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.11461
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 0.48321
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.03836
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.28086
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.09573
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.53966
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.16207
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.69063
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.04265
+wandb:                                                                 +22 ...
+wandb: 
+wandb: 🚀 View run lora_r4_a8_do0.1 at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/n9s95w2k
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_165849-n9s95w2k/logs
+Done!
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 56k3rtk9
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_170101-56k3rtk9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lora_r8_a2_do0.1
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/56k3rtk9
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Device: cuda | Rank: 8 | Alpha: 2 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 185,956 || all params: 21,890,120 || trainable%: 0.8494973988265025
+Trainable: 185,956 / Total: 21,890,120 (0.85%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.4152   0.8399  48.12%  78.52%
+  ✓ Best saved (val_acc=78.52%)
+
+Test Accuracy: 79.05%
+wandb: updating run metadata
+wandb: uploading config.yaml; uploading media/images/classwise_histogram_625_5c4417f92d29ca389333.png; uploading output.log; uploading wandb-summary.json
+wandb: uploading media/images/classwise_histogram_625_5c4417f92d29ca389333.png; uploading wandb-summary.json
+wandb: uploading history steps 6-6, summary
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▁▂▅█▅
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▁▃▅█▇
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▁█▄▆▆
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▂▆▆██
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▄█▇▄▆
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▃▅▅▆█
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▅█▇▆▇
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▃▅▇█▆
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁▂█▃▄▄
+wandb:                                                                 +22 ...
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 1
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.05987
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 0.19196
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.01653
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.12809
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.02924
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.16381
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.04156
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.1392
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.01315
+wandb:                                                                 +22 ...
+wandb: 
+wandb: 🚀 View run lora_r8_a2_do0.1 at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/56k3rtk9
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_170101-56k3rtk9/logs
+Done!
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 3b7cgtwb
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_170309-3b7cgtwb
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lora_r8_a4_do0.1
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/3b7cgtwb
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Device: cuda | Rank: 8 | Alpha: 4 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 185,956 || all params: 21,890,120 || trainable%: 0.8494973988265025
+Trainable: 185,956 / Total: 21,890,120 (0.85%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.3664   0.8199  48.34%  78.94%
+  ✓ Best saved (val_acc=78.94%)
+
+Test Accuracy: 79.31%
+wandb: updating run metadata
+wandb: updating run metadata; uploading history steps 6-6, summary
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: updating run metadata; uploading data
+wandb: updating run metadata
+wandb: uploading wandb-summary.json; uploading media/images/classwise_histogram_625_d74f4f2f6cd8804e14e5.png; uploading output.log; updating run metadata
+wandb: uploading wandb-summary.json; uploading media/images/classwise_histogram_625_d74f4f2f6cd8804e14e5.png; uploading output.log
+wandb: uploading wandb-summary.json; uploading data; uploading config.yaml
+wandb: uploading wandb-summary.json; uploading config.yaml
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▁▄▃▄█
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▁▄▄▇█
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▃▅██▆
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▃▆▇██
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▂█▇▅▆
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▂▅▆█▇
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▄██▆█
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▃▅█▇▆
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁▄▅█▅▅
+wandb:                                                                 +22 ...
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 1
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.11515
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 0.36517
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.02166
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.2121
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.04181
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.2784
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.08481
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.26282
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.02069
+wandb:                                                                 +22 ...
+wandb: 
+wandb: 🚀 View run lora_r8_a4_do0.1 at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/3b7cgtwb
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_170309-3b7cgtwb/logs
+Done!
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run ll536dgp
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_171956-ll536dgp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lora_r8_a8_do0.1
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/ll536dgp
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Device: cuda | Rank: 8 | Alpha: 8 | Dropout: 0.1
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 185,956 || all params: 21,890,120 || trainable%: 0.8494973988265025
+Trainable: 185,956 / Total: 21,890,120 (0.85%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   2.2575   0.7444  50.44%  80.29%
+  ✓ Best saved (val_acc=80.29%)
+
+Test Accuracy: 80.20%
+wandb: updating run metadata
+wandb: uploading media/images/classwise_histogram_625_85ab6fa6d5774fcbd033.png; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading config.yaml
+wandb: uploading data
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁▃▃▇█▅
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▁▂▃▅██
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▃█▅▅█
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▃▅▃▆█
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▁▄█▄▇▄
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▁▃▅▄▆█
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▁▆▇▆█▆
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▁▅▆▄█▅
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁▄▆▅▅█
+wandb:                                                                 +22 ...
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 1
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.0636
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 0.51965
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.0423
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.42948
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.06322
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.45022
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.12378
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.38792
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.0444
+wandb:                                                                 +22 ...
+wandb: 
+wandb: 🚀 View run lora_r8_a8_do0.1 at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/ll536dgp
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_171956-ll536dgp/logs
+Done!
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /csehome/m25csa003/.netrc.
+wandb: Currently logged in as: akshst08092001 (akshst08092001-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run zg5h78qq
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/run-20260406_172200-zg5h78qq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lora_r4_a16_do0.2
+wandb: ⭐️ View project at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: 🚀 View run at https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/zg5h78qq
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Device: cuda | Rank: 4 | Alpha: 16 | Dropout: 0.2
+Files already downloaded and verified
+Files already downloaded and verified
+trainable params: 112,228 || all params: 21,816,392 || trainable%: 0.5144205329643875
+Trainable: 112,228 / Total: 21,816,392 (0.51%)
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   0.8923   0.4393  77.01%  86.61%
+  ✓ Best saved (val_acc=86.61%)
+
+Test Accuracy: 86.99%
+wandb: uploading data; updating run metadata
+wandb: uploading media/images/classwise_histogram_625_9c5c86716f8e60e1a248.png; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: 
+wandb: Run history:
+wandb:                                                               epoch ▁
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight ▁█▃▂▄▄
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight ▄█▃▁▂█
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight ▁▂▄▂▃█
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight ▁▅▆▁▃█
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight ▅▃▄▁▄█
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight ▆▇▁▁▂█
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight ▅▆▃▁▃█
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight ▆█▂▂▁▅
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight ▁▅▄▃▄█
+wandb:                                                                 +22 ...
+wandb: 
+wandb: Run summary:
+wandb:                                                               epoch 1
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_A.default.weight 0.38974
+wandb:  grad_norm/base_model.model.blocks.0.attn.qkv.lora_B.default.weight 1.4426
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_A.default.weight 0.30813
+wandb:  grad_norm/base_model.model.blocks.1.attn.qkv.lora_B.default.weight 0.87724
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_A.default.weight 0.28506
+wandb: grad_norm/base_model.model.blocks.10.attn.qkv.lora_B.default.weight 0.92848
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_A.default.weight 0.39667
+wandb: grad_norm/base_model.model.blocks.11.attn.qkv.lora_B.default.weight 0.89995
+wandb:  grad_norm/base_model.model.blocks.2.attn.qkv.lora_A.default.weight 0.30784
+wandb:                                                                 +22 ...
+wandb: 
+wandb: 🚀 View run lora_r4_a16_do0.2 at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1/runs/zg5h78qq
+wandb: ⭐️ View project at: https://wandb.ai/akshst08092001-iit-jodhpur/DLOps-Ass5-Q1
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260406_172200-zg5h78qq/logs
+Done!
+All runs synced to WandB!

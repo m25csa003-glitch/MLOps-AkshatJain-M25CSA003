@@ -1,0 +1,17 @@
+Q1/data/
+Q2/data/
+*.tar.gz
+Q1/data/
+Q2/data/
+*.tar.gz
+Q1/data/
+Q2/data/
+*.tar.gz
+Q1/data/
+Q2/data/
+*.tar.gz
+.DS_Store
+__pycache__/
+*.pyc
+wandb/
+*.log

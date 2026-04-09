@@ -1,0 +1,67 @@
+nohup: ignoring input
+wandb: Tracking run with wandb version 0.25.1
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q2/wandb/offline-run-20260405_214301-z5izirym
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+/csehome/m25csa003/miniconda3/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/csehome/m25csa003/miniconda3/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Files already downloaded and verified
+Generating BIM adversarial examples...
+
+Epoch  Tr Loss Val Loss  Tr Acc Val Acc
+---------------------------------------------
+    1   0.7065   0.7319  51.04%  51.48%
+  ✓ Best saved (51.48%)
+    2   0.4544   0.3035  77.59%  86.53%
+  ✓ Best saved (86.53%)
+    3   0.1528   0.0726  93.79%  97.65%
+  ✓ Best saved (97.65%)
+    4   0.0433   0.0305  98.46%  99.05%
+  ✓ Best saved (99.05%)
+    5   0.0212   0.0545  99.22%  98.10%
+    6   0.0101   0.0277  99.62%  99.15%
+  ✓ Best saved (99.15%)
+    7   0.0131   0.0292  99.62%  99.15%
+    8   0.0066   0.0486  99.79%  98.65%
+    9   0.0046   0.0413  99.84%  99.08%
+   10   0.0089   0.0202  99.72%  99.45%
+  ✓ Best saved (99.45%)
+   11   0.0018   0.0239  99.96%  99.45%
+   12   0.0006   0.0248  99.99%  99.47%
+  ✓ Best saved (99.47%)
+   13   0.0008   0.0454  99.98%  99.08%
+   14   0.0005   0.0236  99.99%  99.53%
+  ✓ Best saved (99.53%)
+   15   0.0004   0.0299  99.99%  99.45%
+   16   0.0002   0.0250 100.00%  99.50%
+   17   0.0003   0.0252  99.99%  99.50%
+   18   0.0002   0.0299 100.00%  99.47%
+   19   0.0002   0.0263  99.99%  99.50%
+wandb: 
+wandb: Run history:
+wandb: best_detection_accuracy ▁
+wandb:                   epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:          train/accuracy ▁▅▇█████████████████
+wandb:              train/loss █▆▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:            val/accuracy ▁▆██████████████████
+wandb:                val/loss █▄▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_detection_accuracy 99.525
+wandb:                   epoch 20
+wandb:          train/accuracy 100
+wandb:              train/loss 0.00019
+wandb:            val/accuracy 99.5
+wandb:                val/loss 0.02698
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q2/wandb/offline-run-20260405_214301-z5izirym
+wandb: Find logs at: ./wandb/offline-run-20260405_214301-z5izirym/logs
+   20   0.0002   0.0270 100.00%  99.50%
+
+Best Detection Accuracy (BIM): 99.53%
+Target (>=70%): ✓ PASSED

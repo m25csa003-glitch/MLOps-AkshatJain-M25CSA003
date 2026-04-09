@@ -1,0 +1,57 @@
+nohup: ignoring input
+wandb: Tracking run with wandb version 0.25.1
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /csehome/m25csa003/DLOps-Assignment-5/Q2/wandb/offline-run-20260405_202123-75htjixg
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+/csehome/m25csa003/miniconda3/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/csehome/m25csa003/miniconda3/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/csehome/m25csa003/miniconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Files already downloaded and verified
+wandb: 
+wandb: Run history:
+wandb:                 clean_accuracy ▁
+wandb:                        epsilon ▁▁▂▃▄▆█
+wandb: fgsm_scratch/eps_0.01/acc_drop ▁
+wandb: fgsm_scratch/eps_0.01/accuracy ▁
+wandb: fgsm_scratch/eps_0.02/acc_drop ▁
+wandb: fgsm_scratch/eps_0.02/accuracy ▁
+wandb: fgsm_scratch/eps_0.05/acc_drop ▁
+wandb: fgsm_scratch/eps_0.05/accuracy ▁
+wandb:  fgsm_scratch/eps_0.1/acc_drop ▁
+wandb:  fgsm_scratch/eps_0.1/accuracy ▁
+wandb:                             +6 ...
+wandb: 
+wandb: Run summary:
+wandb:                 clean_accuracy 93.41
+wandb:                        epsilon 0.3
+wandb: fgsm_scratch/eps_0.01/acc_drop 53.52
+wandb: fgsm_scratch/eps_0.01/accuracy 39.89
+wandb: fgsm_scratch/eps_0.02/acc_drop 61.23
+wandb: fgsm_scratch/eps_0.02/accuracy 32.18
+wandb: fgsm_scratch/eps_0.05/acc_drop 69.57
+wandb: fgsm_scratch/eps_0.05/accuracy 23.84
+wandb:  fgsm_scratch/eps_0.1/acc_drop 80.92
+wandb:  fgsm_scratch/eps_0.1/accuracy 12.49
+wandb:                             +6 ...
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q2/wandb/offline-run-20260405_202123-75htjixg
+wandb: Find logs at: ./wandb/offline-run-20260405_202123-75htjixg/logs
+Clean Accuracy: 93.41%
+
+   Epsilon   Adv Accuracy   Acc Drop
+--------------------------------------
+     0.010         39.89%     53.52%
+     0.020         32.18%     61.23%
+     0.050         23.84%     69.57%
+     0.100         12.49%     80.92%
+     0.150         10.62%     82.79%
+     0.200         10.10%     83.31%
+     0.300         10.00%     83.41%
+
+Samples saved to ../weights/Q2/fgsm_scratch_samples.pth

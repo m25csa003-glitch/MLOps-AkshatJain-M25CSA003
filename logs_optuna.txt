@@ -1,0 +1,433 @@
+nohup: ignoring input
+[I 2026-04-05 16:42:53,633] A new study created in memory with name: lora_vit_cifar100
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+/csehome/m25csa003/miniconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▃▆██
+wandb:   val/accuracy ▁▅▇██
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 67.795
+wandb:   val/accuracy 68.56
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_164249-if4fasgz
+wandb: Find logs at: ./wandb/offline-run-20260405_164249-if4fasgz/logs
+[I 2026-04-05 16:48:05,193] Trial 0 finished with value: 68.56 and parameters: {'rank': 2, 'alpha': 16, 'dropout': 0.3, 'lr': 1.6306334089916325e-05}. Best is trial 0 with value: 68.56.
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▇███
+wandb:   val/accuracy ▁▆▇██
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 90.0375
+wandb:   val/accuracy 87.7
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_164805-6uqedqbd
+wandb: Find logs at: ./wandb/offline-run-20260405_164805-6uqedqbd/logs
+[I 2026-04-05 16:54:52,170] Trial 1 finished with value: 87.7 and parameters: {'rank': 16, 'alpha': 16, 'dropout': 0.2, 'lr': 0.00013605476076194886}. Best is trial 1 with value: 87.7.
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▅▆▇█
+wandb:   val/accuracy ▁▄▅▇█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 95.515
+wandb:   val/accuracy 89.05
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_165452-tq54jk73
+wandb: Find logs at: ./wandb/offline-run-20260405_165452-tq54jk73/logs
+[I 2026-04-05 17:01:41,311] Trial 2 finished with value: 89.05 and parameters: {'rank': 4, 'alpha': 16, 'dropout': 0.3, 'lr': 0.000993428960601649}. Best is trial 2 with value: 89.05.
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▇▇██
+wandb:   val/accuracy ▁▅▆▇█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 91.92
+wandb:   val/accuracy 88.87
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_170141-h6m9drd2
+wandb: Find logs at: ./wandb/offline-run-20260405_170141-h6m9drd2/logs
+[I 2026-04-05 17:08:22,407] Trial 3 finished with value: 88.87 and parameters: {'rank': 4, 'alpha': 16, 'dropout': 0.3, 'lr': 0.00026070421447150306}. Best is trial 2 with value: 89.05.
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▇▇██
+wandb:   val/accuracy ▁▅▇▇█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 91.7575
+wandb:   val/accuracy 88.63
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_170822-gb46y1r5
+wandb: Find logs at: ./wandb/offline-run-20260405_170822-gb46y1r5/logs
+[I 2026-04-05 17:15:03,541] Trial 4 finished with value: 88.63 and parameters: {'rank': 16, 'alpha': 8, 'dropout': 0.3, 'lr': 0.00025386667281433885}. Best is trial 2 with value: 89.05.
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁█
+wandb: train/accuracy ▁█
+wandb:   val/accuracy ▁█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 2
+wandb: train/accuracy 58.5775
+wandb:   val/accuracy 71.6
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_171503-mf30pmny
+wandb: Find logs at: ./wandb/offline-run-20260405_171503-mf30pmny/logs
+[I 2026-04-05 17:17:14,478] Trial 5 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁█
+wandb: train/accuracy ▁█
+wandb:   val/accuracy ▁█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 2
+wandb: train/accuracy 65.835
+wandb:   val/accuracy 75.47
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_171714-1enpzb0y
+wandb: Find logs at: ./wandb/offline-run-20260405_171714-1enpzb0y/logs
+[I 2026-04-05 17:19:17,343] Trial 6 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▅█
+wandb: train/accuracy ▁▆█
+wandb:   val/accuracy ▁██
+wandb: 
+wandb: Run summary:
+wandb:          epoch 3
+wandb: train/accuracy 92.29
+wandb:   val/accuracy 87.89
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_171917-2dy8ksdf
+wandb: Find logs at: ./wandb/offline-run-20260405_171917-2dy8ksdf/logs
+[I 2026-04-05 17:22:16,444] Trial 7 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁█
+wandb: train/accuracy ▁█
+wandb:   val/accuracy ▁█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 2
+wandb: train/accuracy 35.4375
+wandb:   val/accuracy 49.91
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_172216-uucbprxn
+wandb: Find logs at: ./wandb/offline-run-20260405_172216-uucbprxn/logs
+[I 2026-04-05 17:24:20,821] Trial 8 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▆▇██
+wandb:   val/accuracy ▁▄▆██
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 94.265
+wandb:   val/accuracy 88.9
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_172420-33f8861i
+wandb: Find logs at: ./wandb/offline-run-20260405_172420-33f8861i/logs
+[I 2026-04-05 17:29:15,180] Trial 9 finished with value: 88.93 and parameters: {'rank': 8, 'alpha': 16, 'dropout': 0.1, 'lr': 0.0004489470596934566}. Best is trial 2 with value: 89.05.
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▅▇▇█
+wandb:   val/accuracy ▁▆█▇█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 95.0325
+wandb:   val/accuracy 88.68
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_172915-k5pspiyd
+wandb: Find logs at: ./wandb/offline-run-20260405_172915-k5pspiyd/logs
+[I 2026-04-05 17:34:12,188] Trial 10 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▆▇██
+wandb:   val/accuracy ▁▅▇██
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 93.175
+wandb:   val/accuracy 88.91
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_173412-65j16rki
+wandb: Find logs at: ./wandb/offline-run-20260405_173412-65j16rki/logs
+[I 2026-04-05 17:39:06,196] Trial 11 finished with value: 88.91 and parameters: {'rank': 8, 'alpha': 4, 'dropout': 0.1, 'lr': 0.00044621817773550054}. Best is trial 2 with value: 89.05.
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▆▇██
+wandb:   val/accuracy ▁▄▇██
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 92.7775
+wandb:   val/accuracy 88.6
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_173906-chb3dh2m
+wandb: Find logs at: ./wandb/offline-run-20260405_173906-chb3dh2m/logs
+[I 2026-04-05 17:44:00,348] Trial 12 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁█
+wandb: train/accuracy ▁█
+wandb:   val/accuracy ▁█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 2
+wandb: train/accuracy 79.87
+wandb:   val/accuracy 83.08
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_174400-lfiximr8
+wandb: Find logs at: ./wandb/offline-run-20260405_174400-lfiximr8/logs
+[I 2026-04-05 17:46:02,873] Trial 13 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▆▇██
+wandb:   val/accuracy ▁▄▇██
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 94.2475
+wandb:   val/accuracy 89.07
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_174602-mt8sfgbf
+wandb: Find logs at: ./wandb/offline-run-20260405_174602-mt8sfgbf/logs
+[I 2026-04-05 17:50:59,068] Trial 14 finished with value: 89.07 and parameters: {'rank': 4, 'alpha': 16, 'dropout': 0.2, 'lr': 0.0005035445486135193}. Best is trial 14 with value: 89.07.
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁█
+wandb: train/accuracy ▁█
+wandb:   val/accuracy ▁█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 2
+wandb: train/accuracy 85.8225
+wandb:   val/accuracy 85.72
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_175059-9e28qegz
+wandb: Find logs at: ./wandb/offline-run-20260405_175059-9e28qegz/logs
+[I 2026-04-05 17:53:04,235] Trial 15 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▆▇██
+wandb:   val/accuracy ▁▆▇██
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 93.6425
+wandb:   val/accuracy 88.79
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_175304-o5lg4pb8
+wandb: Find logs at: ./wandb/offline-run-20260405_175304-o5lg4pb8/logs
+[I 2026-04-05 17:58:00,982] Trial 16 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁█
+wandb: train/accuracy ▁█
+wandb:   val/accuracy ▁█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 2
+wandb: train/accuracy 87.33
+wandb:   val/accuracy 86.52
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_175801-i1tuh011
+wandb: Find logs at: ./wandb/offline-run-20260405_175801-i1tuh011/logs
+[I 2026-04-05 18:00:05,709] Trial 17 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁█
+wandb: train/accuracy ▁█
+wandb:   val/accuracy ▁█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 2
+wandb: train/accuracy 81.045
+wandb:   val/accuracy 82.99
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_180005-svr1cv4q
+wandb: Find logs at: ./wandb/offline-run-20260405_180005-svr1cv4q/logs
+[I 2026-04-05 18:02:13,610] Trial 18 pruned. 
+wandb: Tracking run with wandb version 0.16.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: - 0.000 MB of 0.000 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▃▅▆█
+wandb: train/accuracy ▁▅▇▇█
+wandb:   val/accuracy ▁▄▆▇█
+wandb: 
+wandb: Run summary:
+wandb:          epoch 5
+wandb: train/accuracy 94.6075
+wandb:   val/accuracy 88.84
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /csehome/m25csa003/DLOps-Assignment-5/Q1/wandb/offline-run-20260405_180213-ap3z8dnk
+wandb: Find logs at: ./wandb/offline-run-20260405_180213-ap3z8dnk/logs
+[I 2026-04-05 18:07:09,343] Trial 19 pruned. 
+
+=== Best Trial ===
+  Val Accuracy : 89.07%
+  Rank         : 4
+  Alpha        : 16
+  Dropout      : 0.2
+  LR           : 0.000504
+
+Best params saved to ../weights/Q1/best_params.json

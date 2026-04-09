@@ -1,0 +1,24 @@
+#!/bin/bash
+cd ~/DLOps-Assignment-5/Q1
+export WANDB_MODE=offline
+
+for rank in 2 4 8; do
+  for alpha in 2 4 8; do
+    # Skip already done experiments
+    if [ "$rank" -eq 2 ] && [ "$alpha" -eq 2 ]; then continue; fi
+    if [ "$rank" -eq 2 ] && [ "$alpha" -eq 4 ]; then continue; fi
+    
+    echo "=============================="
+    echo "Running: Rank=$rank, Alpha=$alpha"
+    echo "=============================="
+    python lora_experiments.py \
+      --rank $rank \
+      --alpha $alpha \
+      --dropout 0.1 \
+      --epochs 10 \
+      --batch_size 64 \
+      --lr 1e-4 \
+      --num_workers 1
+  done
+done
+echo "All remaining LoRA experiments done!"
